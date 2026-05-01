@@ -37,6 +37,6 @@
 Adobe Photoshop 23.0+<br>
 实际测试Phpotoshop2026 v27.2.0可用。其他版本是否可用未知...
 
-## 欢迎访问
-
-[gapsun.cn](https://gapsun.cn)
+## 关于
+反馈地址：q7vw3vq2l@mozmail.com <br>
+个人站点：[gapsun.cn](https://gapsun.cn)
