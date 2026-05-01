@@ -38,5 +38,3 @@
 
 Adobe Photoshop 23.0+
 实际测试Phpotoshop2026 v27.2.0可用。其他版本是否可用未知...
-
----
