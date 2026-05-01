@@ -1,5 +1,5 @@
 # Photoshop-Plugin-NameNote 命名记事本
-更便捷地为导出图片命名，或在不切换窗口的情况下拥有一个临时记事本。 
+更便捷地为导出图片命名，或在不切换窗口的情况下拥有一个临时记事本。 <br>
 主页：[gapsun.cn](https://gapsun.cn) · GitHub：[Photoshop-Plugin-NameNote](https://github.com/goforwhy/Photoshop-Plugin-NameNote)
 
 ---
@@ -29,14 +29,12 @@
 ---
 
 ## 安装
-方法一：下载 [cn.gapsun.hanxi.NameNote_PS.ccx](./cn.gapsun.hanxi.NameNote_PS.ccx)，双击安装（需有 Adobe Creative Cloud）
+方法一：下载 [cn.gapsun.hanxi.NameNote_PS.ccx](./cn.gapsun.hanxi.NameNote_PS.ccx)，双击安装（需有 Adobe Creative Cloud）<br>
 方法二：下载 file 文件夹，将文件夹放在 `C:\Program Files\Adobe\Adobe Photoshop[你的PS版本]\Plug-ins\`，重启 PS
 
 ---
 
 ## 环境要求
 
-Adobe Photoshop 23.0+
+Adobe Photoshop 23.0+<br>
 实际测试Phpotoshop2026 v27.2.0可用。其他版本是否可用未知...
-
----
