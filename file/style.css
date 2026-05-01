@@ -1,0 +1,250 @@
+/* ===================================================
+   记事本插件 — 样式表
+   遵循 Adobe UXP 开发规范
+   颜色使用 Photoshop 主题 CSS 变量
+   =================================================== */
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: var(--uxp-host-text-color, #ffffff);
+  background-color: var(--uxp-host-background-color, #323232);
+  font-family: var(--uxp-host-font-family, sans-serif);
+  font-size: var(--uxp-host-font-size, 12px);
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: var(--uxp-host-border-color, #5a5a5a) transparent;
+}
+
+body::-webkit-scrollbar { width: 6px; }
+body::-webkit-scrollbar-track { background: transparent; }
+body::-webkit-scrollbar-thumb {
+  background-color: var(--uxp-host-border-color, #5a5a5a);
+  border-radius: 3px;
+}
+
+#notepad-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 8px 8px 8px;
+  box-sizing: border-box;
+}
+
+/* ── 主输入框 ────────────────────────────────────── */
+#main-input {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: var(--uxp-host-input-background-color, #1e1e1e);
+  color: var(--uxp-host-text-color, #ffffff);
+  border: 1px solid var(--uxp-host-border-color, #4a4a4a);
+  border-radius: 2px;
+  padding: 6px 8px;
+  font-family: inherit;
+  font-size: inherit;
+  resize: both;
+  min-height: 80px;
+  max-height: 400px;
+  line-height: 1.5;
+  outline: none;
+  overflow: auto;
+}
+
+#main-input:focus {
+  border-color: var(--uxp-host-focus-color, #0073e6);
+}
+
+#main-input.sealed {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* ── 操作按钮行 ─────────────────────────────────── */
+#action-buttons {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+#action-buttons sp-button {
+  width: 60px;
+  flex-shrink: 0;
+}
+
+/* ── 高度调节器 ─────────────────────────────────── */
+#height-ctrl {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+#height-input {
+  width: 54px;
+  background-color: var(--uxp-host-input-background-color, #1e1e1e);
+  color: var(--uxp-host-text-color, #ffffff);
+  border: 1px solid var(--uxp-host-border-color, #4a4a4a);
+  border-radius: 2px;
+  padding: 3px 5px;
+  font-family: inherit;
+  font-size: 11px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+#height-input:focus {
+  border-color: var(--uxp-host-focus-color, #0073e6);
+}
+
+#height-input::-webkit-outer-spin-button,
+#height-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+#height-input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.height-label {
+  color: var(--uxp-host-text-color, #888888);
+  font-size: 10px;
+  flex-shrink: 0;
+}
+
+/* ── 分析结果区域 ────────────────────────────────── */
+#result-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* ── 每行结果卡片 ────────────────────────────────── */
+.result-row {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding: 4px 5px;
+  border: 1px solid var(--uxp-host-border-color, #3a3a3a);
+  border-radius: 3px;
+  background-color: var(--uxp-host-input-background-color, #282828);
+}
+
+/* ── 小输入框（独占一行） ────────────────────────── */
+.line-input {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: var(--uxp-host-background-color, #323232);
+  color: var(--uxp-host-text-color, #ffffff);
+  border: 1px solid var(--uxp-host-border-color, #4a4a4a);
+  border-radius: 2px;
+  padding: 4px 6px;
+  font-family: inherit;
+  font-size: inherit;
+  outline: none;
+}
+
+.line-input:focus {
+  border-color: var(--uxp-host-focus-color, #0073e6);
+}
+
+/* ── 按钮行 ─────────────────────────────────────── */
+.row-btns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+}
+
+/* ── 通用按钮基础样式 ────────────────────────────── */
+.name-btn,
+.action-btn,
+.del-btn {
+  flex-shrink: 0;
+  border-radius: 2px;
+  padding: 2px 5px;
+  font-family: var(--uxp-host-font-family, sans-serif);
+  font-size: 11px;
+  cursor: pointer;
+  border: 1px solid var(--uxp-host-border-color, #5a5a5a);
+  transition: background-color 0.12s ease;
+}
+
+/* Name 按钮 — 略微高亮区分 */
+.name-btn {
+  background-color: var(--uxp-host-button-background-color, #4a4a4a);
+  color: var(--uxp-host-text-color, #ffffff);
+  min-width: 46px;
+}
+
+.name-btn:hover {
+  background-color: var(--uxp-host-highlight-color, #5a5a5a);
+}
+
+.name-btn:active {
+  background-color: #3a3a3a;
+}
+
+/* action 按钮（Name_rules / Name_effect / Shape / Send）*/
+.action-btn {
+  background-color: var(--uxp-host-button-background-color, #3e3e3e);
+  color: var(--uxp-host-text-color, #cccccc);
+}
+
+.action-btn:hover {
+  background-color: var(--uxp-host-highlight-color, #505050);
+}
+
+.action-btn:active {
+  background-color: #2e2e2e;
+}
+
+/* del 按钮 — 红色调 */
+.del-btn {
+  background-color: var(--uxp-host-button-background-color, #4a4a4a);
+  color: #ff6b6b;
+  min-width: 32px;
+}
+
+.del-btn:hover {
+  background-color: #5a2020;
+  border-color: #ff6b6b;
+}
+
+.del-btn:active {
+  background-color: #3a1515;
+}
+
+.name-btn:focus-visible,
+.action-btn:focus-visible,
+.del-btn:focus-visible {
+  outline: 2px solid var(--uxp-host-focus-color, #0073e6);
+  outline-offset: 1px;
+}
+
+/* ── 底部信息 ─────────────────────────────────── */
+.footer {
+  text-align: center;
+  color: var(--uxp-host-text-color, #888888);
+  font-size: 10px;
+  line-height: 1.6;
+  margin: 8px 0 0 0;
+  padding: 4px 0;
+  border-top: 1px solid var(--uxp-host-border-color, #3a3a3a);
+}
+
+.ext-link {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.ext-link:hover {
+  text-decoration: underline;
+}
+
+.sep {
+  margin: 0 4px;
+  opacity: 0.5;
+}

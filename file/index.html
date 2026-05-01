@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="notepad-panel">
+
+    <!-- 主文本输入框 -->
+    <textarea
+      id="main-input"
+      placeholder="在此输入文案…"
+      rows="6"
+      spellcheck="false"
+    ></textarea>
+
+    <!-- 操作按钮行 -->
+    <div id="action-buttons">
+      <sp-button id="btn-seal" variant="secondary">封印</sp-button>
+      <sp-button id="btn-analyze" variant="cta">分析</sp-button>
+      <!-- 高度调节器：输入数字改变主输入框高度（单位 px） -->
+      <div id="height-ctrl">
+        <input
+          type="number"
+          id="height-input"
+          min="-400"
+          max="400"
+          step="10"
+          title="在原高度基础上增减（px），回车生效"
+        />
+        <span class="height-label" id="height-label">+0px</span>
+      </div>
+    </div>
+
+    <!-- 分析结果区域 -->
+    <div id="result-list"></div>
+
+    <!-- 底部信息 -->
+    <p class="footer">命名记事本1.0.2<span class="sep">|</span><span class="ext-link" data-url="https://gapsun.cn">gapsun.cn</span><span class="sep">|</span><span class="ext-link" data-url="https://github.com/goforwhy/Photoshop-Plugin-NameNote">GitHub</span></p>
+
+  </div>
+
+  <script src="main.js"></script>
+
+</body>
+</html>
