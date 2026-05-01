@@ -14,7 +14,7 @@
 - **Send**：将当前行内容写回主输入框
 - **del**：删除当前行卡片
 - **高度调节器**：输入数值（px）调整主输入框高度，标签实时反馈偏移量
-- **以上功能的视频演示请移步**：[PS插件_命名记事本 BiliBili](https://player.bilibili.com/player.html?bvid=BV1JfRTBtEyJ&page=1)
+- **以上功能的视频演示请移步**：[PS插件_命名记事本](https://www.bilibili.com/video/BV1JfRTBtEyJ/)
 
 ---
 
