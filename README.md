@@ -2,6 +2,7 @@
 更便捷地为导出图片命名，或在不切换窗口的情况下拥有一个临时记事本。 
 主页：[gapsun.cn](https://gapsun.cn) · GitHub：[Photoshop-Plugin-NameNote](https://github.com/goforwhy/Photoshop-Plugin-NameNote)
 
+<<<<<<< HEAD
 ---
 
 ## 功能
@@ -40,3 +41,8 @@ Adobe Photoshop 23.0+
 实际测试Phpotoshop2026 v27.2.0可用。其他版本是否可用未知...
 
 ---
+=======
+正在更新Readme.md，请稍后查看。
+
+您可以直接下载 cn.gapsun.hanxi.NameNote_PS.ccx ，双击安装进Adobe Creative Cloud即可在Photoshop中使用它。
+>>>>>>> e12abe364037546a5e7c7f7bbcb229b814bd48ba
