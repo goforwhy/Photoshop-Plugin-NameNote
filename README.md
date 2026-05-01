@@ -1,6 +1,5 @@
 # Photoshop-Plugin-NameNote 命名记事本
-更便捷地为导出图片命名，或在不切换窗口的情况下拥有一个临时记事本。 <br>
-主页：[gapsun.cn](https://gapsun.cn) · GitHub：[Photoshop-Plugin-NameNote](https://github.com/goforwhy/Photoshop-Plugin-NameNote)
+更便捷地为导出图片命名，或在不切换窗口的情况下拥有一个临时记事本。
 
 ---
 
@@ -15,8 +14,7 @@
 - **Send**：将当前行内容写回主输入框
 - **del**：删除当前行卡片
 - **高度调节器**：输入数值（px）调整主输入框高度，标签实时反馈偏移量
-
-<video src="https://player.bilibili.com/player.html?bvid=BV1JfRTBtEyJ&page=1" style="width:100%;max-width:680px;height:450px;" frameborder="0" allowfullscreen></video>
+- **以上功能的视频演示请移步**：[PS插件_命名记事本 BiliBili](https://player.bilibili.com/player.html?bvid=BV1JfRTBtEyJ&page=1)
 
 ---
 
@@ -38,3 +36,7 @@
 
 Adobe Photoshop 23.0+<br>
 实际测试Phpotoshop2026 v27.2.0可用。其他版本是否可用未知...
+
+## 欢迎访问
+
+[gapsun.cn](https://gapsun.cn)
