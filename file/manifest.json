@@ -1,7 +1,7 @@
 {
   "id": "cn.gapsun.hanxi.NameNote",
   "name": "命名记事本",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "index.html",
   "description": "批量需求重命名和规范记录，省去手动打标题的繁琐。",
   "author": "寒隙",
@@ -41,19 +41,11 @@
       },
       "icons": [
         {
-          "width": 32,
-          "height": 32,
-          "path": "icons/dark@1x.png",
+          "width": 23,
+          "height": 23,
+          "path": "icons/icon.png",
           "scale": [1, 2],
-          "theme": ["dark", "darkest"],
-          "species": ["panel"]
-        },
-        {
-          "width": 32,
-          "height": 32,
-          "path": "icons/light@1x.png",
-          "scale": [1, 2],
-          "theme": ["lightest", "light"],
+          "theme": ["darkest", "dark", "medium", "lightest", "light", "all"],
           "species": ["panel"]
         }
       ],
@@ -66,16 +58,10 @@
     {
       "width": 23,
       "height": 23,
-      "path": "icons/dark@1x.png",
+      "path": "icons/icon.png",
       "scale": [1, 2],
-      "theme": ["darkest", "dark", "medium"]
-    },
-    {
-      "width": 23,
-      "height": 23,
-      "path": "icons/light@1x.png",
-      "scale": [1, 2],
-      "theme": ["lightest", "light"]
+      "theme": ["darkest", "dark", "medium", "lightest", "light", "all"],
+      "species": ["pluginList"]
     }
   ]
 }
